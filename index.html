@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Aagaman - Begusarai | Stay in Comfort</title>
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -16,18 +15,27 @@
             <h2>Hotel Aagaman</h2>
             <p>...Feels Like Home...</p>
         </div>
-        <nav>
+        <nav class="nav-links">
             <a href="#home">Home</a>
             <a href="#rooms">Rooms</a>
             <a href="#amenities">Amenities</a>
             <a href="#about">About Us</a>
-            <a href="#contact">Contact</a>
         </nav>
         <a href="tel:09798355593" class="btn-book-nav">Book Now <i class="fa-solid fa-arrow-right"></i></a>
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION WITH VIDEO BACKGROUND -->
     <section id="home" class="hero">
+        <!-- Background Video Loop -->
+        <video autoplay loop muted playsinline class="hero-video-bg">
+            <!-- Replace this URL with your actual hotel reception video link -->
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-luxury-hotel-reception-desk-42172-large.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <!-- Dark Overlay to make text perfectly readable -->
+        <div class="hero-overlay"></div>
+
         <div class="hero-container">
             <div class="hero-content">
                 <span class="badge">WELCOME TO HOTEL AAGAMAN</span>
@@ -35,7 +43,7 @@
                 <p>The best hotel for your family. Feels Like Home.</p>
                 <a href="#rooms" class="btn-explore">Explore Rooms <i class="fa-solid fa-arrow-right"></i></a>
 
-                <!-- Check Availability Bar -->
+                <!-- Responsive Booking Bar -->
                 <div class="booking-bar">
                     <div class="input-group">
                         <label>Check-in</label>
@@ -52,14 +60,6 @@
                     <button class="btn-search">Search Availability</button>
                 </div>
             </div>
-            
-            <div class="hero-image-box">
-                <!-- Placeholder Image for Hotel Reception/Owner -->
-                <div class="video-placeholder">
-                    <i class="fa-solid fa-play"></i>
-                    <span>Hotel Aagaman Intro</span>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -69,7 +69,6 @@
         <h2 class="section-title">Our Favorite Rooms</h2>
 
         <div class="rooms-grid">
-            <!-- Deluxe Room -->
             <div class="room-card">
                 <div class="room-img" style="background-image: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=500');"></div>
                 <div class="room-details">
@@ -83,7 +82,6 @@
                 </div>
             </div>
 
-            <!-- Executive Room -->
             <div class="room-card">
                 <div class="room-img" style="background-image: url('https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=500');"></div>
                 <div class="room-details">
@@ -130,48 +128,9 @@
 
     <!-- STATS -->
     <section class="stats-bar">
-        <div class="stat-item"><h3>129+</h3><p>Google Reviews (4.7★)</p></div>
+        <div class="stat-item"><h3>129+</h3><p>Google Reviews</p></div>
         <div class="stat-item"><h3>500+</h3><p>Happy Customers</p></div>
-        <div class="stat-item"><h3>15+</h3><p>Premium Rooms</p></div>
-        <div class="stat-item"><h3>3+</h3><p>Years of Service</p></div>
-    </section>
-
-    <!-- AMENITIES SECTION -->
-    <section id="amenities" class="amenities-section">
-        <h2 class="section-title-center">Hotel Amenities</h2>
-        <div class="amenities-grid">
-            <div class="amenity-card">
-                <i class="fa-solid fa-bell"></i>
-                <h3>24-hour Room Service</h3>
-                <p>Our reception desk is open 24/7 to assist you with any inquiries or requests.</p>
-            </div>
-            <div class="amenity-card">
-                <i class="fa-solid fa-car"></i>
-                <h3>Free Parking</h3>
-                <p>Enjoy hassle-free parking with our secure and spacious parking facilities.</p>
-            </div>
-            <div class="amenity-card">
-                <i class="fa-solid fa-utensils"></i>
-                <h3>On-Site Restaurant</h3>
-                <p>Enjoy delicious meals without leaving the hotel at our in-house dining kitchen.</p>
-            </div>
-            <div class="amenity-card">
-                <i class="fa-solid fa-wifi"></i>
-                <h3>Free Internet Access</h3>
-                <p>Stay connected with our high-speed internet access available throughout the hotel.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="testimonials">
-        <span class="badge-gold">TESTIMONIALS</span>
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial-box">
-            <div class="stars">★★★★★</div>
-            <p>"Guests say this hotel offers comfortable rooms, delicious food, and a safe and secure environment. They also highlight the friendly and helpful staff, and the great service they provide."</p>
-            <h4>- Google Verified Reviews Summary</h4>
-        </div>
+        <div class="stat-item"><h3>15+</h3><p>Rooms</p></div>
     </section>
 
     <!-- FOOTER -->
@@ -184,20 +143,12 @@
             </div>
             <div class="footer-contact">
                 <h3>Get In Touch</h3>
-                <p><i class="fa-solid fa-location-dot"></i> Dak Bunglow Rd, behind Kotak Mahindra Bank and Bombay Fashion, Kali Asthan, Begusarai, Bihar</p>
+                <p><i class="fa-solid fa-location-dot"></i> Dak Bunglow Rd, behind Kotak Mahindra Bank, Kali Asthan, Begusarai, Bihar</p>
                 <p><i class="fa-solid fa-phone"></i> 097983 55593</p>
-                <p><i class="fa-solid fa-envelope"></i> info@hotelaagamanbegusarai.com</p>
-            </div>
-            <div class="footer-links">
-                <h3>Useful Links</h3>
-                <a href="#home">Home</a>
-                <a href="#rooms">Rooms</a>
-                <a href="#amenities">Amenities</a>
-                <a href="#about">About Us</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>Copyright © 2026 Hotel Aagaman Begusarai. All rights reserved.</p>
+            <p>Copyright © 2026 Hotel Aagaman Begusarai.</p>
         </div>
     </footer>
 
